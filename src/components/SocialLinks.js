@@ -4,8 +4,8 @@ import twitter from "../img/social/twitter.svg"
 function SocialLinks() {
   return (
     <>
-      <img src={facebook} alt="" />
-      <img src={twitter} alt="" />
+      <a href=""> <img src={facebook} alt="facebook" /></a>
+      <a href=""> <img src={twitter} alt="twitter" /></a>
     </>
   );
 }
