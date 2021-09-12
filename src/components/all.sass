@@ -6,6 +6,7 @@
 // Kaldi logo brand color: #FD461E
 $kaldi-red: #D64000
 $kaldi-red-invert: #fff
+$secondary: #FE0000
 
 $primary: $kaldi-red
 $primary-invert: $kaldi-red-invert
@@ -219,8 +220,7 @@ footer.footer
 .menu-list
   list-style: none !important
   text-align: left
-.social
-  padding: 2em
+
 .social a
   padding: .5em .5em .3em .5em
   border-radius: 1em
@@ -241,17 +241,63 @@ footer.footer
   flex-basis: 35%
   margin: 0 1.5em 0 0
 
-// @import "~bulma"
-
-// responsiveness
-// +tablet-only
-//   .blog-list-item .featured-thumbnail
-//     flex-basis: 50%;
-
-// +mobile
-//   .blog-list-item header
-//     display: block
-//   .blog-list-item .featured-thumbnail
-//     text-align: center;
-//     max-width: 70%;
-//     margin: 0 0 1em;
+// icon styles
+.icon
+  width: 24px
+  color: $accent
+//  Footer Styles
+.footer
+  border-top: 8px solid $secondary
+  .container
+    display: grid
+    grid-template-columns: 4fr 2fr
+    @media screen and (max-width: 480px)
+      grid-template-columns: 1fr
+    .footer-left
+      margin-bottom: 20px
+      .cta
+        font-size: 16px
+        font-weight: bold
+        margin-top: 37px
+        line-height: 18px
+    .footer-right
+      text-align: right
+      margin-bottom: 20px
+      .spacer
+        height: 48px
+        width: 100%
+      .social
+        margin-top: 10px
+        img
+          width: 24px
+          margin-left: 10px
+    .navbar-start 
+      .navbar-item
+        font-weight: 600
+        font-size: 13px
+        line-height: 13px
+        transition: all .3s
+        margin-right: 48px
+        padding: 10px
+        padding-top: 12px
+        border-radius: 5px
+        color: $black
+        @media screen and (max-width: 1120px)
+          margin-right: 30px
+        @media screen and (max-width: 900px)
+          margin-right: 15px
+        @media screen and (max-width: 780px)
+          display: block
+          max-width: 200px
+      .navbar-item.active
+        color: $accent
+    .contact-item
+      display: grid
+      grid-template-columns: 24px 1fr
+      color: $black
+      line-height: 24px
+      font-size: 16px
+      margin-top: 10px
+      span
+        padding-top: 5px
+        padding-left: 20px

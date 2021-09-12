@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Link } from "gatsby";
-import github from "../img/github-icon.svg";
 import logo from "../img/logo1.webp";
 import Menu from "./Menu";
 import SocialLinks from "./SocialLinks";
@@ -81,16 +80,3 @@ const Navbar = ({ path }) => {
 };
 
 export default Navbar;
-
-{
-  /* Hamburger menu */
-}
-// <div
-//             className={`navbar-burger burger ${navBarActiveClass}`}
-//             data-target="navMenu"
-//             onClick={() => toggleHamburger()}
-//           >
-//             <span />
-//             <span />
-//             <span />
-//           </div>
