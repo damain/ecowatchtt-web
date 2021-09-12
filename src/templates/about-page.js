@@ -31,11 +31,11 @@ AboutPageTemplate.propTypes = {
   contentComponent: PropTypes.func,
 }
 
-const AboutPage = ({ data }) => {
+const AboutPage = ({ path, data }) => {
   const { markdownRemark: post } = data
 
   return (
-    <Layout>
+    <Layout path={path}>
       <AboutPageTemplate
         contentComponent={HTMLContent}
         title={post.frontmatter.title}

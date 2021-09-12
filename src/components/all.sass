@@ -1,5 +1,6 @@
 //@import "~bulma/sass/utilities/initial-variables"
-@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;600&display=swap');
+@import "reset"
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;600&display=swap')
 
 // Config vars
 // Kaldi logo brand color: #FD461E
@@ -10,17 +11,127 @@ $primary: $kaldi-red
 $primary-invert: $kaldi-red-invert
 $body-color: #333
 $black: #2b2523
+$white-ter: #ffffffe5
+$accent: #00A64C
 
+.navbar .container
+  margin-top: 24px
+  display: grid
+  grid-template-columns: 4fr 2fr
+  .nav-right
+    justify-self: right
+    text-align: right
+    position: relative
+    .social-area
+      text-align: right
+      margin-bottom: 30px
+      @media screen and (max-width: 780px)
+        display: none
+      img
+        width: 34px
+        margin-left: 5px
+    div .search
+      @media screen and (max-width: 780px)
+        display: none
+    .hamburger
+      color: $accent
+      position: absolute
+      top: 0px
+      right: 10px
+      width: 44px
+      display: none
+      @media screen and (max-width: 780px)
+        display: block
+    .side-menu
+      z-index: 99
+      background-color: #f1f1f1
+      padding: 20px
+      position: fixed
+      top: 70px
+      width: 50vw
+      right: -50vw
+      transition: all .3s
+      border-radius: 4px
+      @media screen and (max-width: 480px)
+        width: 100vw
+        right: -100vw
+      .navbar-start
+        .navbar-item
+          display: block
+          margin-bottom: 10px
+          color: $black
+          font-weight: 600
+          font-size: 13px
+          padding: 20px
+        .navbar-item.active
+          color: $accent
+      .social-area
+        display: block
+        img
+          margin: 20px
 
-* 
-  font-family: 'Spartan', sans-serif
+    .side-menu.active
+      right: -50vw
+      @media screen and (max-width: 780px)
+        right: 0
 
 .navbar .navbar-menu
-  box-shadow:none !important
+  box-shadow: none !important
+  margin-top: 40px
+  margin-bottom: 24px
+  font-weight: 600
+  font-size: 13px
+  .navbar-start
+
+    @media screen and (max-width: 780px)
+      display: none
+    .navbar-item
+      transition: all .3s
+      margin-right: 48px
+      padding: 10px
+      border-radius: 5px
+      color: $black
+      @media screen and (max-width: 1120px)
+        margin-right: 30px
+      @media screen and (max-width: 900px)
+        margin-right: 15px
+    .navbar-item.active
+      color: $accent
+
+input
+  border: 1px solid rgba(0, 0, 0, 0.19)
+  border-radius: 4px
+  height: 34px
+  padding: 2px
+
+.search
+  position: relative
+  .search-input
+    padding-left: 30px
+  .search-icon
+    width: 24px
+    position: absolute
+    top: 7px
+    left: 5px
+    color: rgba(0, 0, 0, 0.19)
+
+a
+  text-decoration: none
+
+.cta-button
+  background-color: $accent
+  color: $white-ter !important
+  border-radius: 4px
 
 .navbar-item img.logo
   max-height: 77px
 
+.container
+  transition: all .3s
+  max-width: 80%
+  margin: auto
+  @media screen and (max-width: 1120px)
+    max-width: 90%
 
 .content .taglist
   list-style: none
@@ -52,30 +163,30 @@ $black: #2b2523
   align-items: center
 
 .full-width-image
-    width: 100vw
-    height: 400px
-    background-size: cover
-    background-position: bottom
-    display: flex
-    justify-content: center
-    align-items: center
+  width: 100vw
+  height: 400px
+  background-size: cover
+  background-position: bottom
+  display: flex
+  justify-content: center
+  align-items: center
 
 .btn
-    display: inline-block
-    padding: 12px 16px 10px
-    font-size: 18px
-    font-size: 1rem
-    line-height: 1.25
-    background-color: #fff
-    border-radius: .25rem
-    text-decoration: none
-    font-weight: 700
-    color: #CC3700
-    text-align: center
-    -webkit-box-shadow: inset 0 0 0 2px #CC3700
-    box-shadow: inset 0 0 0 2px #f40
-    -webkit-transition: all .15s ease
-    transition: all .15s ease
+  display: inline-block
+  padding: 12px 16px 10px
+  font-size: 18px
+  font-size: 1rem
+  line-height: 1.25
+  background-color: #fff
+  border-radius: .25rem
+  text-decoration: none
+  font-weight: 700
+  color: #CC3700
+  text-align: center
+  -webkit-box-shadow: inset 0 0 0 2px #CC3700
+  box-shadow: inset 0 0 0 2px #f40
+  -webkit-transition: all .15s ease
+  transition: all .15s ease
 
 .margin-top-0
   margin-top: 0 !important
@@ -102,7 +213,6 @@ footer.footer
 // $menu-list-border-left: 1px solid $kaldi-red-invert
 // $menu-label-color: $white-ter
 
-
 .menu-label
   font-size: 1em !important
   text-align: left
@@ -112,38 +222,36 @@ footer.footer
 .social
   padding: 2em
 .social a
-    padding: .5em .5em .3em .5em
-    border-radius: 1em
-    background-color: $white-ter
-    margin: .5em
-    width: 1em
-    height: 1em
-    vertical-align: middle
-    display: inline
+  padding: .5em .5em .3em .5em
+  border-radius: 1em
+  background-color: $white-ter
+  margin: .5em
+  width: 1em
+  height: 1em
+  vertical-align: middle
+  display: inline
 
 // blog roll
 .blog-list-item.is-featured
-  background-color: #d6400033;
+  background-color: #d6400033
 .blog-list-item header
-  display: flex;
-  margin-bottom: 1em;
+  display: flex
+  margin-bottom: 1em
 .blog-list-item .featured-thumbnail
-  flex-basis: 35%;
-  margin: 0 1.5em 0 0;
+  flex-basis: 35%
+  margin: 0 1.5em 0 0
 
-
-@import "~bulma"
-
+// @import "~bulma"
 
 // responsiveness
-+tablet-only
-  .blog-list-item .featured-thumbnail
-    flex-basis: 50%;
+// +tablet-only
+//   .blog-list-item .featured-thumbnail
+//     flex-basis: 50%;
 
-+mobile
-  .blog-list-item header
-    display: block
-  .blog-list-item .featured-thumbnail
-    text-align: center;
-    max-width: 70%;
-    margin: 0 0 1em;
+// +mobile
+//   .blog-list-item header
+//     display: block
+//   .blog-list-item .featured-thumbnail
+//     text-align: center;
+//     max-width: 70%;
+//     margin: 0 0 1em;
