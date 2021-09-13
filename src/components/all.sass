@@ -1,7 +1,7 @@
 //@import "~bulma/sass/utilities/initial-variables"
 @import "reset"
 @import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;600&display=swap')
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap')
 // Config vars
 // Kaldi logo brand color: #FD461E
 $kaldi-red: #D64000
@@ -223,14 +223,39 @@ footer.footer
   display: inline
 
 // blog roll
+.blog-list-item
+  display: grid
+  grid-template-columns: 1fr 2fr
+  margin-top: 26px  
+  grid-gap: 60px
+
+.blog-preview-content
+  padding-top: 24px
+  .blog-preview-header
+    margin-bottom: 20px
+    .date
+      margin-top: 5px
+    h3
+      a
+        color: $accent
+  p
+    .button
+      color: $accent
+
 .blog-list-item.is-featured
   background-color: #d6400033
-.blog-list-item header
-  display: flex
-  margin-bottom: 1em
-.blog-list-item .featured-thumbnail
-  flex-basis: 35%
-  margin: 0 1.5em 0 0
+  
+
+.featured-thumbnail
+  position: relative
+  &::before
+   position: absolute
+   left: 10px
+   content: ''
+   right: -10px
+   bottom: -10px
+   top: 10px
+   background-color: $accent 
 
 // icon styles
 .icon
@@ -304,3 +329,33 @@ footer.footer
   border-bottom: 1px solid transparent
   &:hover
     border-bottom: 1px solid $accent
+
+// Typography
+h1
+  font-size: 32px
+  font-weight: 600
+  margin-bottom: 10px
+h2
+  font-size: 28px
+  font-weight: 600
+  margin-bottom: 10px
+h3
+  font-size: 24px
+  font-weight: 600
+
+h4 
+  font-size: 16px
+  font-weight: 600
+
+p
+  font-size: 14px
+  margin-bottom: 10px
+  line-height: 18px
+
+blockquote
+  font-family: 'Poppins', sans-serif !important
+  font-style: italic
+  p
+    font-family: 'Poppins', sans-serif
+    font-style: italic
+
