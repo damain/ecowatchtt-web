@@ -201,9 +201,14 @@ a
   fill: currentColor
 .navbar-brand .navbar-item.logo
   padding: 0 1rem
-footer.footer
-  padding: 3rem 0rem 0rem
-  background-color: transparent
+// footer.footer
+//   margin-top: 20px
+
+//   background-color: transparent
+//   position: relative
+//   &::before
+//     position: absolute
+
 
 .menu-label
   font-size: 1em !important
@@ -235,6 +240,7 @@ footer.footer
     margin-bottom: 20px
     .date
       margin-top: 5px
+      color: $black
     h3
       a
         color: $accent
@@ -245,6 +251,18 @@ footer.footer
 .blog-list-item.is-featured
   background-color: #d6400033
   
+.blog-link
+  margin-top: 50px
+
+  .button
+    border: 2px solid $accent
+    padding: 10px
+    border-radius: 4px
+    color: $black
+    font-weight: 600
+    &:hover
+      background-color: $accent
+      color: $white-ter
 
 .featured-thumbnail
   position: relative
@@ -263,7 +281,18 @@ footer.footer
   color: $accent
 //  Footer Styles
 .footer
-  border-top: 8px solid $secondary
+  // border-top: 8px solid $secondary
+  margin-top: 80px
+  background-color: transparent
+  position: relative
+  &::before
+    position: absolute
+    top: -55px
+    left: 0
+    right: 0
+    height: 10px
+    content: ""
+    background: linear-gradient(to bottom, red, red 80%, black, black);
   .container
     display: grid
     grid-template-columns: 4fr 2fr
