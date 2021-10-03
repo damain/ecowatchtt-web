@@ -11,6 +11,8 @@ featuredimage: /img/2017-agents-smiling-2.jpg
 ---
 <!--StartFragment-->
 
+![Agents Smiling](/img/2017-agents-smiling-2.jpg "Agents Smiling")
+
 The residents of the Allegheny River Valley urgently ask Governor Tom Wolf to exercise his executive power to revoke the permit for the Penneco Sedat #3A class 2 waste disposal well in Plum Borough. 
 
 The well site would present devastating risks to several downstream Allegheny River public drinking water systems, including the Pittsburgh Water and Sewer Authority which provides water to hundreds of thousands of City of Pittsburgh residents and businesses. New scientific evidence suggests there are numerous pathways for pollution. 
