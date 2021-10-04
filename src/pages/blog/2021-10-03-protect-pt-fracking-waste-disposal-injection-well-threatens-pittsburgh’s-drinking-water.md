@@ -8,10 +8,11 @@ description: "The residents of the Allegheny River Valley urgently ask Governor
   Sedat #3A class 2 waste disposal well in Plum Borough."
 featuredpost: false
 featuredimage: /img/2017-agents-smiling-2.jpg
+youtubevideo: https://youtu.be/D0p3WXpqQqM?t=350
 ---
-<!--StartFragment-->
+![]()
 
-![Agents Smiling](/img/2017-agents-smiling-2.jpg "Agents Smiling")
+<!--StartFragment-->
 
 The residents of the Allegheny River Valley urgently ask Governor Tom Wolf to exercise his executive power to revoke the permit for the Penneco Sedat #3A class 2 waste disposal well in Plum Borough. 
 
