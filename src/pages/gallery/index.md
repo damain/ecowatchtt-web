@@ -1,4 +1,6 @@
 ---
+templateKey: 'gallery-page'
+path: /gallery
 images:
   - image: /img/apple-touch-icon.png
     description: A cup
