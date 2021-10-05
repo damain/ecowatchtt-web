@@ -1,6 +1,4 @@
 import React from "react";
-import { Link } from "gatsby";
-
 import logo from "../img/logo1.webp";
 import Menu from "./Menu";
 import SocialLinks from "./SocialLinks";
