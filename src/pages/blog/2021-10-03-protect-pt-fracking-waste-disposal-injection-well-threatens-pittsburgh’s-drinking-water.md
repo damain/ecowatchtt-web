@@ -10,7 +10,7 @@ featuredpost: false
 featuredimage: /img/2017-agents-smiling-2.jpg
 youtubevideo: https://youtu.be/D0p3WXpqQqM?t=350
 ---
-![]()
+![](/img/2017-agents-smiling-2.jpg)
 
 <!--StartFragment-->
 
