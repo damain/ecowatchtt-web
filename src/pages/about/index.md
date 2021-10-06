@@ -1,19 +1,18 @@
 ---
-templateKey: 'about-page'
+templateKey: about-page
 path: /about
 title: About our values
 ---
-### Shade-grown coffee
-Coffee is a small tree or shrub that grows in the forest understory in its wild form, and traditionally was grown commercially under other trees that provided shade. The forest-like structure of shade coffee farms provides habitat for a great number of migratory and resident species.
+<!--StartFragment-->
 
-### Single origin
-Single-origin coffee is coffee grown within a single known geographic origin. Sometimes, this is a single farm or a specific collection of beans from a single country. The name of the coffee is then usually the place it was grown to whatever degree available.
+ECOWATCH TT is made up of past and present industry professionals, who are experienced in many aspects of upstream, midstream and downstream operations. 
 
-### Sustainable farming
-Sustainable agriculture is farming in sustainable ways based on an understanding of ecosystem services, the study of relationships between organisms and their environment. What grows where and how it is grown are a matter of choice and careful consideration for nature and communities.
+The group was born out of an immediate need to raise awareness on the current issue, of a proposed Class II Deep Well Injection of liquid waste in Trinidad and Tobago’s Point Fortin community. This proposal is being made by the Island’s lone LNG producer, in a time when the international community continues to grapple with the effects of a pandemic which has claimed over 4.55 million lives to date (September 2021).  
 
-### Direct sourcing
-Direct trade is a form of sourcing practiced by some coffee roasters. Advocates of direct trade practices promote direct communication and price negotiation between buyer and farmer, along with systems that encourage and incentivize quality.
+This planet as we know it is vitally important to us all. It is where we live, work, play and raise our families. Its sustainability is crucial to our continued existence here on earth and the survival of every living creature depends on our resources within.  
 
-### Reinvest profits
-We want to truly empower the communities that bring amazing coffee to you. That’s why we reinvest 20% of our profits into farms, local businesses and schools everywhere our coffee is grown. You can see the communities grow and learn more about coffee farming on our blog.
+Global warming is real and we absolutely cannot afford for the continued water pollution, deforestation or air pollution of our world, as we run a great risk of completely destroying or depleting all which we have left. 
+
+We believe that it is our job to create a better world for those who would inherit it and the only way to make that happen is by acting now! 
+
+<!--EndFragment-->
