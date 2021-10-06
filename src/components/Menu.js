@@ -13,7 +13,7 @@ function Menu({path}) {
           ABOUT
         </Link>
         <Link className={`navbar-item ${path=== "/contact/" ? "active" : ""}`} to="/contact">
-          CONATACT
+          CONTACT
         </Link>
         <Link className={`navbar-item cta-button`} to="/contact/examples">
           SIGN THE PETITION

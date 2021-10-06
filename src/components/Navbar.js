@@ -5,6 +5,7 @@ import Menu from "./Menu";
 import SocialLinks from "./SocialLinks";
 import styled from "styled-components";
 import colors from "./colors";
+import Hamburger from "./hamburger";
 
 const Navbar = ({ path }) => {
   const [active, setActive] = useState(false);
@@ -48,11 +49,13 @@ const Navbar = ({ path }) => {
                   d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
                 />
               </svg>
-              <input type="text" className="search-input" />
+              <input type="text" className="search-input" placeholder="search..."/>
             </Search>
           </div>
 
-          <svg
+          <Hamburger onClick={toggleHamburger} active={active}/>
+
+          {/* <svg
             xmlns="http://www.w3.org/2000/svg"
             className="hamburger"
             onClick={toggleHamburger}
@@ -66,7 +69,7 @@ const Navbar = ({ path }) => {
               strokeWidth={2}
               d="M4 6h16M4 12h16M4 18h16"
             />
-          </svg>
+          </svg> */}
 
           {/* Side menu */}
           <div className={`side-menu ${active ? "active" : ""}`}>

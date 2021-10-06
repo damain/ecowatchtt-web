@@ -42,7 +42,7 @@ const BlogRoll = ({ data }) => {
                   <br />
                   <br />
                   <Link className="button" to={post.fields.slug}>
-                    Keep Reading 1→
+                    Keep Reading →
                   </Link>
                 </p>
               </div>
@@ -83,7 +83,7 @@ export default () => (
                 featuredpost
                 featuredimage {
                   childImageSharp {
-                    fluid(maxWidth: 120, quality: 100) {
+                    fluid(maxWidth: 400, quality: 100) {
                       ...GatsbyImageSharpFluid
                     }
                   }

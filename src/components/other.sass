@@ -10,6 +10,20 @@ $black: #2b2523
 $white-ter: #ffffffe5
 $accent: #00A64C
 
+body
+    min-height: 100vh
+    display: flex
+
+.pageWrapper
+    min-width: 100%
+    min-height: 100vh
+    display: flex
+    flex-direction: column    
+    main
+        flex-grow: 1
+
+a
+    text-decoration: none
 .cta-button
   background-color: $accent
   color: $white-ter !important
@@ -55,7 +69,6 @@ $accent: #00A64C
   align-items: center
 
 .full-width-image
-  width: 100vw
   height: 400px
   background-size: cover
   background-position: bottom
@@ -127,6 +140,8 @@ $accent: #00A64C
   grid-template-columns: 1fr 2fr
   margin-top: 26px
   grid-gap: 60px
+  @media screen and (max-width : 768px)
+    display: block
 
 .blog-preview-content
   .blog-preview-header
@@ -142,8 +157,8 @@ $accent: #00A64C
     .button
       color: $accent
 
-.blog-list-item.is-featured
-  background-color: #d6400033
+// .blog-list-item.is-featured
+//   background-color: #00a64b2f
 
 .blog-link
   margin-top: 50px
