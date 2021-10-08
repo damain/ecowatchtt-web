@@ -1,11 +1,12 @@
 import React from "react";
 import { graphql, StaticQuery } from "gatsby";
+import Layout from "../components/Layout"
 
 function GalleryPage({ data }) {
   const {edges: gallery} = data.allMarkdownRemark
-  return <div>
+  return <Layout>
       {gallery.map(images=><div>image</div>)}
-  </div>;
+  </Layout>;
 }
 
 

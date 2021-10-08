@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import { Helmet } from "react-helmet";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
@@ -7,6 +7,18 @@ import useSiteMetadata from "./SiteMetadata";
 import { withPrefix } from "gatsby";
 
 const TemplateWrapper = ({ path, children }) => {
+
+  useEffect(()=>{
+    let handleResize = ()=>{
+      const scrollbarWidth = window.innerWidth - document.body.clientWidth
+      document.body.style.setProperty("--scrollbarWidth", `${scrollbarWidth}px`)
+    }
+    handleResize()
+    window.addEventListener("resize", handleResize)
+    return ()=>{
+      window.removeEventListener("resize", handleResize)
+    }
+  },[])
   const { title, description } = useSiteMetadata();
   return (
     <div className="pageWrapper">
