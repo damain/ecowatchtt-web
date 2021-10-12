@@ -166,7 +166,8 @@ const SlideText = styled(motion.div)`
   align-items: center;
   & .content {
     position: absolute;
-    background-color: #008000b3;
+    /* background-color: #008000b3; */
+    background-color: #c20000b3;
     color: white;
     padding: 25px;
     font-weight: 600;
@@ -174,6 +175,7 @@ const SlideText = styled(motion.div)`
     transform: skewX(168deg);
   }
   & .author{
-      top: -110px;
+      top: -120px;
+      font-size: .8em;
   }
 `;
