@@ -17,7 +17,7 @@ const Footer = ({ path }) => {
             <section>
               <ul className="menu-list">
                 <li>
-                  <a className="contact-item" href="tel:18681112222">
+                  <a className="contact-item" href="tel:18683566290">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       className="phone-icon icon"
