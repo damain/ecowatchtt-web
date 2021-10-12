@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import { Link, graphql, StaticQuery } from "gatsby";
 import PreviewCompatibleImage from "./PreviewCompatibleImage";
 
-const BlogRoll = ({ data }) => {
+const BlogRoll = ({ data , dataType = ""}) => {
   const { edges: posts } = data.allMarkdownRemark;
 
   return (
@@ -88,6 +88,7 @@ export default () => (
                     }
                   }
                 }
+                tags
               }
             }
           }

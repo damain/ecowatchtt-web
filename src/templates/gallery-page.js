@@ -24,7 +24,7 @@ function GalleryPage({ data }) {
     },
   };
   return (
-    <Layout>
+    <div>
       <Wrapper>
         {gallery[0]?.node?.frontmatter.images.map((galleryItem, index) => (
           <div key={galleryItem?.image?.publicURL}>
@@ -46,7 +46,7 @@ function GalleryPage({ data }) {
           </motion.div>
         )}
       </AnimatePresence>
-    </Layout>
+    </div>
   );
 }
 

@@ -31,7 +31,7 @@ const Navbar = ({ path }) => {
         </div>
         <NavRight className="nav-right">
           <div className="social-area">
-            <SocialLinks />
+            {/* <SocialLinks /> */}
           </div>
           <div>
             <Search className="search">

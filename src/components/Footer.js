@@ -64,7 +64,7 @@ const Footer = ({ path }) => {
             <img src={logo} alt="EcoWatchTT" style={{ width: "14em" }} />
           </div>
           <div className="column is-4 social">
-            <SocialLinks />
+            {/* <SocialLinks /> */}
           </div>
         </div>
       </div>
