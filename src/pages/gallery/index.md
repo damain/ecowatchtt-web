@@ -3,7 +3,7 @@ templateKey: gallery-page
 path: /gallery
 images:
   - image: /img/anand-ramlochan-beach-pollution-in-chaguaramas-litter-lining-the-coast-of-chaguaramas-11-20-18.jpg
-    author: Anand Ramlochan
+    author: "Anand Ramlochan "
     description: "BEACH POLLUTION IN CHAGUARAMAS LITTER LINING THE COAST OF CHAGUARAMAS "
   - image: /img/bernaby-jaco-skinner-over-3000-dead-pigs-fished-out-of-huangpu-river.jpg
     author: BERNABY JACO SKINNER
