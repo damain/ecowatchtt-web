@@ -6,6 +6,7 @@ import SocialLinks from "./SocialLinks";
 const Footer = ({ path }) => {
   return (
     <footer className="footer ">
+      <div className="footerTopBorder"></div >
       <div className="container has-background-black has-text-white-ter">
         <div style={{ maxWidth: "100vw" }} className="footer-left">
           <div className="column is-4">

@@ -61,7 +61,6 @@ const TemplateWrapper = ({ path, children }) => {
         <Navbar path={path} />
         <div>{children}</div>
       </main>
-
       <Footer />
     </div>
   );

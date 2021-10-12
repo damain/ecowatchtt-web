@@ -192,20 +192,21 @@ img
 .icon
     width: 24px
     color: $accent
-//  Footer Styles
-.footer
-  // border-top: 8px solid $secondary
+
+    //  Footer Styles
+footer
     margin-top: 80px
     background-color: transparent
     position: relative
     &::before
         position: absolute
-        top: -55px
+        top: -77px
         left: 0
         right: 0
         height: 10px
         content: ""
         background: linear-gradient(to bottom, red, red 80%, black, black)
+
 .container
     display: grid
     grid-template-columns: 4fr 2fr
@@ -292,3 +293,10 @@ button
     background-color: $accent
     color: $white-ter !important
     border-radius: 4px
+
+//Slideshow styles
+.slide
+    width: 90vw
+    position: absolute
+    .slideImage
+        max-height: 90vh

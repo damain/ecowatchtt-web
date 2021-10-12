@@ -1,16 +1,54 @@
-import React from "react";
+import React, { useState } from "react";
 import { graphql, StaticQuery } from "gatsby";
-import Layout from "../components/Layout"
+import GatsbyImage from "gatsby-image";
+import Layout from "../components/Layout";
+import useModal from "../components/useModal";
+import Slideshow from "../components/slideshow";
+import { AnimatePresence, motion } from "framer-motion";
+import styled from "styled-components";
 
 function GalleryPage({ data }) {
-  const {edges: gallery} = data.allMarkdownRemark
-  return <Layout>
-      {gallery.map(images=><div>image</div>)}
-  </Layout>;
+  const [Modal, openModal, toggleModal] = useModal();
+  const { edges: gallery } = data.allMarkdownRemark;
+  const [selectedImage, setSelectedImage] = useState(0);
+  const handleImageClicked = (index) => {
+    setSelectedImage(index);
+    toggleModal();
+  };
+  const animation = {
+    hide: {
+      opacity: 0,
+    },
+    show: {
+      opacity: 1,
+    },
+  };
+  return (
+    <Layout>
+      <Wrapper>
+        {gallery[0]?.node?.frontmatter.images.map((galleryItem, index) => (
+          <div key={galleryItem.image.publicURL}>
+            <div onClick={() => handleImageClicked(index)}>
+              <GatsbyImage fluid={galleryItem.image.childImageSharp.fluid} />
+            </div>
+          </div>
+        ))}
+      </Wrapper>
+      <AnimatePresence>
+        {openModal && (
+          <motion.div variants={animation} initial="hide" animate="show" exit="hide">
+            <Modal isOpen={openModal} close={toggleModal}>
+              <Slideshow
+                images={gallery[0]?.node?.frontmatter.images}
+                selectedImage={selectedImage}
+              />
+            </Modal>
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </Layout>
+  );
 }
-
-
-
 
 export default () => (
   <StaticQuery
@@ -25,10 +63,11 @@ export default () => (
                 images {
                   image {
                     childImageSharp {
-                      fluid(maxWidth: 120, quality: 100) {
+                      fluid(maxWidth: 400, quality: 100) {
                         ...GatsbyImageSharpFluid
                       }
                     }
+                    publicURL
                   }
                   description
                 }
@@ -41,3 +80,11 @@ export default () => (
     render={(data, count) => <GalleryPage data={data} count={count} />}
   />
 );
+
+const Wrapper = styled(motion.div)`
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 300px);
+  gap: 20px;
+  width: 80%;
+  margin: auto;
+`;
