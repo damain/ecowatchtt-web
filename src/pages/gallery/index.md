@@ -1,16 +1,16 @@
 ---
-templateKey: gallery-page
+templateKey: 'gallery-page'
 path: /gallery
 images:
   - image: /img/anand-ramlochan-beach-pollution-in-chaguaramas-litter-lining-the-coast-of-chaguaramas-11-20-18.jpg
-    author: "Anand Ramlochan "
-    description: "BEACH POLLUTION IN CHAGUARAMAS LITTER LINING THE COAST OF CHAGUARAMAS "
+    author: Anand Ramlochan 
+    description: BEACH POLLUTION IN CHAGUARAMAS LITTER LINING THE COAST OF CHAGUARAMAS
   - image: /img/bernaby-jaco-skinner-over-3000-dead-pigs-fished-out-of-huangpu-river.jpg
     author: BERNABY JACO SKINNER
     description: OVER 3000 DEAD PIGS FISHED OUT OF HUANGPU RIVER
   - image: /img/camille-moreno-atlantic-lng-fire-causes-air-pollution-9-13-17.jpg
     author: CAMILLE MORENO
-    description: "ATLANTIC LNG FIRE CAUSES AIR POLLUTION "
+    description: ATLANTIC LNG FIRE CAUSES AIR POLLUTION
   - image: /img/chaguaramas-oil-spill.jpg
     description: CHAGUARAMAS OIL SPILL
   - image: /img/charlie-riedel-bird-in-oil-spill.jpg
@@ -29,10 +29,6 @@ images:
     author: GEORGE STEINMETZ
     description: HE SPENDS EACH MORNING LOOKING FOR RECYCLABLE PLASTIC THAT HE CAN
       SELL FOR 35 CENTS PER KILO TO HELP HIS FAMILY
-  - image: /img/global-alliance-for-clean-cookstoves-household-pollution-from-burning-biomass-used-in-cookstoves-and-for-cooking-contributes-to-4.3m-deaths-per-year.jpg
-    author: GLOBAL ALLIANCE FOR CLEAN COOKSTOVES
-    description: HOUSEHOLD POLLUTION FROM BURNING BIOMASS USED IN COOKSTOVES AND FOR
-      COOKING CONTRIBUTES TO 4.3M DEATHS PER YEAR
   - image: /img/greenatom.net-boy-swimming-in-polluted-water-in-india.jpg
     author: GREENATOM.NET
     description: BOY SWIMMING IN POLLUTED WATER IN INDIA
@@ -60,7 +56,6 @@ images:
     author: PIXSHARK.COM
     description: SUFFERING SEAL NOT SAFE IN ITS OWN HABITAT
   - image: /img/plastic-sandals-found-on-beaches-in-raja-ampat.jpg
-    author: ""
     description: PLASTIC SANDALS FOUND ON BEACHES IN RAJA AMPAT
   - image: /img/populationspeakout-albatross-killed-by-excessive-plastic-ingestion-in-midway-islands-north-pacific-.jpg
     author: POPULATIONSPEAKOUT
@@ -76,9 +71,9 @@ images:
   - image: /img/populationspeakout.org-ken-river-oil-field-california-usa-–-exploited-since-1899.jpg
     author: POPULATIONSPEAKOUT.ORG
     description: KEN RIVER OIL FIELD, CALIFORNIA (USA) – EXPLOITED SINCE 1899
-  - image: /img/populationspeakout.org-part-of-the-amazonian-jungle-in-brazil-burnt-down-to-be-“repurposed”.jpg
+  - image: /img/populationspeakout.org-part-of-the-amazonian-jungle-in-brazil-burnt-down-to-be-repurposed.jpg
     author: POPULATIONSPEAKOUT.ORG
-    description: PART OF THE AMAZONIAN JUNGLE IN BRAZIL, BURNT DOWN TO BE “REPURPOSED"
+    description: PART OF THE AMAZONIAN JUNGLE IN BRAZIL, BURNT DOWN TO BE "REPURPOSED"
   - image: /img/reuters-boy-swims-in-algae-filled-water-qingdao-shandong.jpg
     author: REUTERS
     description: BOY SWIMS IN ALGAE-FILLED WATER, QINGDAO, SHANDONG

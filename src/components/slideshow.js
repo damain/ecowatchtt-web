@@ -78,6 +78,7 @@ function Slideshow({ images, selectedImage }) {
             transition={{ delay: 0.3 }}
             className="slideText"
           >
+            {images[page].author && <div className="content author">{images[page].author}</div>}
             <div className="content">{images[page].description}</div>
           </SlideText>
         </motion.div>
@@ -170,6 +171,9 @@ const SlideText = styled(motion.div)`
     padding: 25px;
     font-weight: 600;
     font-size: 1.2em;
-    transform: skewX(168deg)
+    transform: skewX(168deg);
+  }
+  & .author{
+      top: -110px;
   }
 `;

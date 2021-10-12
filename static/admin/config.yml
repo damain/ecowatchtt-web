@@ -69,4 +69,4 @@ collections:
         name: "galleryImages"
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "gallery-page"}
-          - {label: "images", name: "images", widget: "list", summary: '{{fields.image}}', fields: [{label: Image, name: image, widget: image}, {label: "Description", name: "description", widget: "text", required: false}]}
+          - {label: "images", name: "images", widget: "list", fields: [{label: Image, name: image, widget: image},{label: "Author", name: "author", widget: "text", required: false}, {label: "Description", name: "description", widget: "text", required: false}]}

@@ -27,9 +27,9 @@ function GalleryPage({ data }) {
     <Layout>
       <Wrapper>
         {gallery[0]?.node?.frontmatter.images.map((galleryItem, index) => (
-          <div key={galleryItem.image.publicURL}>
+          <div key={galleryItem?.image?.publicURL}>
             <div onClick={() => handleImageClicked(index)}>
-              <GatsbyImage fluid={galleryItem.image.childImageSharp.fluid} />
+              <GatsbyImage fluid={galleryItem?.image?.childImageSharp.fluid} />
             </div>
           </div>
         ))}
@@ -63,13 +63,14 @@ export default () => (
                 images {
                   image {
                     childImageSharp {
-                      fluid(maxWidth: 400, quality: 100) {
+                      fluid(maxWidth: 750, quality: 100) {
                         ...GatsbyImageSharpFluid
                       }
                     }
                     publicURL
                   }
                   description
+                  author
                 }
               }
             }
