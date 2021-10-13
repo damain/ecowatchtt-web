@@ -5,6 +5,7 @@ import { Link, graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Features from '../components/Features'
 import BlogRoll from '../components/BlogRoll'
+import colors from '../components/colors'
 
 export const IndexPageTemplate = ({
   image,
@@ -40,8 +41,8 @@ export const IndexPageTemplate = ({
           className="has-text-weight-bold is-size-3-mobile is-size-2-tablet is-size-1-widescreen"
           style={{
             boxShadow:
-              '#00A64C 0.5rem 0px 0px, #00A64C -0.5rem 0px 0px',
-            backgroundColor: '#00A64C',
+              `${colors.secondary} 0.5rem 0px 0px, ${colors.secondary} -0.5rem 0px 0px`,
+            backgroundColor: colors.secondary,
             color: 'white',
             lineHeight: '1',
             padding: '0.25em',
@@ -49,7 +50,7 @@ export const IndexPageTemplate = ({
         >
           {title}
         </h1>
-        <h3
+        {subheading && subheading.trim().length > 0 && <h3
           className="has-text-weight-bold is-size-5-mobile is-size-5-tablet is-size-4-widescreen"
           style={{
             boxShadow:
@@ -61,7 +62,7 @@ export const IndexPageTemplate = ({
           }}
         >
           {subheading}
-        </h3>
+        </h3>}
       </div>
     </div>
     <section className="section section--gradient main-content">
@@ -98,7 +99,7 @@ export const IndexPageTemplate = ({
                   <h3 className="has-text-weight-semibold is-size-2">
                     Latest Articles
                   </h3>
-                  <BlogRoll />
+                  <BlogRoll count={3} />
                   <div className="blog-link">
                     <Link className="button" to="/blog">
                       Read more articles

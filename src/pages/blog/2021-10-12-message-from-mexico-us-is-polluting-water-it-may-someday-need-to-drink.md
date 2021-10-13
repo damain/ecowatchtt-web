@@ -9,7 +9,7 @@ tags:
   - Water Pollution
   - Injection wells
 ---
-![Mexico City Aquifer](/img/ap_mexico_city_aquifer_630x420_130124.jpg "Mexico City Aquifer")
+![](/img/ap_mexico_city_aquifer_630x420_130124.jpg "Mexico City Aquifer")
 
 Even as global warming and climate change continue to affect water supplies around the world, many US scientists and policy-makers turn a blind eye to the pollution caused by deep aquifers and continue to grant energy and mining companies approvals for deep well injections. They are of the assumption that water at that depth will never be tapped into to be used as potable water. 
 

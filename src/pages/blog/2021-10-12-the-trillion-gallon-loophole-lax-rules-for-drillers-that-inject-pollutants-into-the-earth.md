@@ -9,7 +9,7 @@ featuredimage: /img/csb_explosion_truck_630x420_120919.webp
 tags:
   - Injection wells
 ---
-![Exploded trucks](/img/csb_explosion_truck_630x420_120919.webp "Exploded trucks")
+![](/img/csb_explosion_truck_630x420_120919.webp "Exploded trucks")
 
 Legal framework and enforced regulations play a pivotal role in deep well injection, but there are times when regulators turn a blind eye to enforcement, resulting in risk to health and lives. Case in point, an explosion in January 2003 at a Class 2 injection well site in Rosharon, Texas that claimed the lives of three people. 
 
