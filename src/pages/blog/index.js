@@ -5,7 +5,17 @@ import BlogRoll from "../../components/BlogRoll";
 import BlogNav from "../../components/BlogNav";
 import { AnimatePresence , motion} from "framer-motion";
 import Gallery from "../../templates/gallery-page";
+import VideoRoll from "../../components/VideoRoll";
 
+const animation = {
+  hide: {
+    
+    opacity: 0
+  },
+  show:{
+    opacity: 1
+  }
+}
 export default function BlogIndexPage() {
   const [activeItem, setActiveItem] = useState("articles");
   return (
@@ -13,7 +23,7 @@ export default function BlogIndexPage() {
       <div
         className="full-width-image-container margin-top-0"
         style={{
-          backgroundImage: `url('/img/blog-index.jpg')`,
+          backgroundImage: `url('/img/blog.jpg')`,
         }}
       >
         <h1
@@ -33,16 +43,28 @@ export default function BlogIndexPage() {
       </div>
       <AnimatePresence>
         {activeItem === "articles" && (
-          <section className="section">
+          <motion.section className="section"
+          variants = {animation}
+          intitial ="hide"
+          animate = "show"
+          exit = "hide"
+          key= "articles"
+          >
             <div className="container">
               <div className="content">
                 <BlogRoll />
               </div>
             </div>
-          </section>
+          </motion.section>
         )}
         {activeItem === "gallery" && (
-          <motion.section className="section">
+          <motion.section className="section"
+          variants = {animation}
+          intitial ="hide"
+          animate = "show"
+          exit = "hide"
+          key = "gallery"
+          >
             <div className="container">
               <div className="content">
                 <Gallery />
@@ -51,13 +73,19 @@ export default function BlogIndexPage() {
           </motion.section>
         )}
         {activeItem === "videos" && (
-          <section className="section">
+          <motion.section className="section"
+          variants = {animation}
+          intitial ="hide"
+          animate = "show"
+          exit = "hide"
+          key = "videos"
+          >
             <div className="container">
               <div className="content">
-                <BlogRoll />
+                <VideoRoll />
               </div>
             </div>
-          </section>
+          </motion.section>
         )}
       </AnimatePresence>
     </Layout>

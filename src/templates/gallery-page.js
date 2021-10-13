@@ -25,6 +25,7 @@ function GalleryPage({ data }) {
   };
   return (
     <div>
+      <h3 style={{textAlign: "center"}}>Photos of environmental issues arround the world</h3>
       <Wrapper>
         {gallery[0]?.node?.frontmatter.images.map((galleryItem, index) => (
           <div key={galleryItem?.image?.publicURL}>
@@ -84,8 +85,8 @@ export default () => (
 
 const Wrapper = styled(motion.div)`
   display: grid;
-  grid-template-columns: repeat(auto-fill, 300px);
-  gap: 20px;
+  grid-template-columns: repeat(auto-fill, 200px);
+  gap: 10px;
   width: 80%;
   margin: auto;
 `;

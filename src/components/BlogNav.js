@@ -1,6 +1,7 @@
 import React from 'react'
 import {AnimateSharedLayout, motion} from "framer-motion"
 import styled from 'styled-components'
+import colors from './colors'
 
 function BlogNav({activeItem, setActiveItem}) {
     return (
@@ -36,19 +37,29 @@ const UnderlineContainer = styled.div`
 `
 const Underline = styled(motion.div)`
     height: 3px;
-    background-color: red;
+    background-color: white;
 `
 
 const Button = styled(motion.button)`
     background-color: transparent;
+    color: white;
     border: none;
-    font-size: 1.4em;
+    font-size: 1.6em;
+    padding: 10px;
+    border-radius: 0;
+    transition: all .5s;
+    &:hover{
+        background-color: ${colors.accent};
+        cursor: pointer;
+    }
+    
 `
 
 const Nav = styled.div`
     display: flex;
     flex-direction: row;
     margin-top: 20px;
+    background-color: rgba(255,0,0,.6);
 `
 
 const spring = {
