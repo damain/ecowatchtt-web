@@ -34,7 +34,7 @@ const Navbar = ({ path }) => {
             {/* <SocialLinks /> */}
           </div>
           <div>
-            <Search className="search">
+            {/* <Search className="search">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="search-icon"
@@ -50,7 +50,7 @@ const Navbar = ({ path }) => {
                 />
               </svg>
               <input type="text" className="search-input" placeholder="search..."/>
-            </Search>
+            </Search> */}
           </div>
 
           <Hamburger onClick={toggleHamburger} active={active}/>
@@ -74,9 +74,9 @@ const Navbar = ({ path }) => {
           {/* Side menu */}
           <div className={`side-menu ${active ? "active" : ""}`}>
             <Menu path={path} />
-            <div className="social-area">
+            {/* <div className="social-area">
               <SocialLinks />
-            </div>
+            </div> */}
           </div>
         </NavRight>
       </Container>
@@ -93,6 +93,7 @@ const Container = styled.div`
   grid-template-columns: 4fr 2fr;
   & a {
     text-decoration: none;
+    border-radius: 0;
   }
 
   transition: all 0.3s;
@@ -193,7 +194,7 @@ const NavMenu = styled.div`
       transition: all 0.3s;
       margin-right: 48px;
       padding: 10px;
-      border-radius: 5px;
+      border-radius: 0px;
       color: ${colors.black};
       @media screen and (max-width: 1120px) {
         margin-right: 30px;

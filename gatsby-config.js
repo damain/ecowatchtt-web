@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby + Netlify CMS Starter',
+    title: 'EcoWatch TT',
     description:
-      'This repo contains an example business website that is built with Gatsby, and Netlify CMS.It follows the JAMstack architecture by using Git as a single source of truth, and Netlify for continuous deployment, and CDN distribution.',
+      'ECOWATCH TT is made up of past and present industry professionals, who are experienced in many aspects of upstream, midstream and downstream operations. We believe that it is our job to create a better world for those who would inherit it and the only way to make that happen is by acting now!',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
