@@ -9,7 +9,7 @@ featuredimage: /img/rt_texas_reservoir_630x420_121210.jpg
 tags:
   - Injection wells
 ---
-![Texas Resevoir](/img/rt_texas_reservoir_630x420_121210.jpg "Texas Resevoir")
+![](/img/rt_texas_reservoir_630x420_121210.jpg "Texas Resevoir")
 
 In the US, energy and mining companies are frequently given aquifer exemptions by the EPA, especially in Western states where water is scarce. Aquifer exemptions form part of the government’s Underground Injection Control Program. These exemptions, however, can be viewed as permission to pollute aquifers, as these companies are allowed to release toxic material into underground reservoirs with the threat of contaminating the nation's drinking water.
 
