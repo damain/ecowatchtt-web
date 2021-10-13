@@ -6,7 +6,7 @@ description: "Source: Pro Publica"
 featuredpost: false
 featuredimage: /img/140729_cc_epa_curved_630x420.png
 ---
-![EPA Building](/img/140729_cc_epa_curved_630x420.png "EPA Building")
+![](/img/140729_cc_epa_curved_630x420.png "EPA Building")
 
 In every country, there is an official environmental body responsible for overseeing the enforcement of rules governing deep well injection, such as the Environmental Management Authority in Trinidad and Tobago and the Environmental Protection  Agency (EPA) in the US. These bodies are responsible for things like safety inspections, keeping proper records of deep well injections activities in their jurisdictions, and adjusting safety guidelines as it becomes necessary.
 
