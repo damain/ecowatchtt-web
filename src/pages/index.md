@@ -17,6 +17,6 @@ mainpitch:
     According to the terms and conditions of the CEC, the company cannot commence work of any kind until the company obtains approvals from ALL statutory and regulatory agencies. Atlantic is also mandated to ensure that every precaution is taken to avoid any form of air, noise and water pollution. Additionally, as part of the approval agreement, the company is required to engage the stakeholders – residents, institutions, businesses etc. – on the scope of work related to the project, effects, restrictions, health and safety measures to be taken, and identification of specific names and contact numbers for the community relations officers.  
 
 
-    Click on the following link to view the full contents of the terms and conditions of the CEC. <a href="/files/AtlanticCEC.pdf">AtlanticLNG CEC pdf</a>
+    Click on the following link to view the full contents of the terms and conditions of the CEC. <a href="/files/AtlanticCEC.pdf">AtlanticLNG-CEC.pdf</a>
 description: "     "
 ---
