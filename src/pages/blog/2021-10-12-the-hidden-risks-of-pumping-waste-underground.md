@@ -9,7 +9,7 @@ tags:
   - Injection wells
   - ""
 ---
-![Kansas Fire](/img/kansas-fire-062012.png "Kansas Fire")
+![](/img/kansas-fire-062012.png "Kansas Fire")
 
 Deep well injection, the process of storing or disposing of liquids waste deep underground, may seem like a safe way to get rid of toxic waste, but it is fraught with risks. It has been known to cause problems such as underground leakage, as was the case in January 2021 in Hutchinson, Kansas in the US.
 
