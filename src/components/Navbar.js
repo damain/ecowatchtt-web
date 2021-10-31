@@ -174,7 +174,7 @@ const NavRight = styled.div`
     &.active {
       right: -50vw;
       @media screen and (max-width: 780px) {
-        right: 0;
+        right: -10px;
       }
     }
   }

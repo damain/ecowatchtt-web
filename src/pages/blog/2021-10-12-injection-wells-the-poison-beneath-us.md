@@ -1,7 +1,7 @@
 ---
 templateKey: blog-post
 title: "Injection wells: The poison beneath us "
-date: 2021-10-12T01:23:18.972Z
+date: 2021-10-13T16:41:35.398Z
 description: "Source: ProPublica"
 featuredpost: false
 featuredimage: /img/well-062012.webp
