@@ -85,8 +85,18 @@ export default () => (
 
 const Wrapper = styled(motion.div)`
   display: grid;
-  grid-template-columns: repeat(auto-fill, 200px);
-  gap: 10px;
+  grid-template-columns: repeat(auto-fill, 24%);
+  gap: 1%;
   width: 80%;
   margin: auto;
-`;
+  @media screen and (max-width: 1200px){
+    gap: 2%;
+    grid-template-columns: repeat(auto-fill, 32%);
+  }
+  @media screen and (max-width: 800px){
+    grid-template-columns: repeat(auto-fill, 48%);
+  }
+  @media screen and (max-width: 600px){
+    grid-template-columns: repeat(auto-fill, 100%);
+  }
+  `;

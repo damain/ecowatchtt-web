@@ -154,7 +154,6 @@ const NavRight = styled.div`
     & .navbar-start {
       & .navbar-item {
         display: block;
-        margin-bottom: 10px;
         color: ${colors.black};
         font-weight: 600;
         font-size: 13px;
