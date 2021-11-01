@@ -90,7 +90,7 @@ const Container = styled.div`
   margin: auto;
   margin-top: 24px;
   display: grid;
-  grid-template-columns: 4fr 2fr;
+  grid-template-columns: 5fr 1fr;
   & a {
     text-decoration: none;
     border-radius: 0;
@@ -154,7 +154,6 @@ const NavRight = styled.div`
     & .navbar-start {
       & .navbar-item {
         display: block;
-        margin-bottom: 10px;
         color: ${colors.black};
         font-weight: 600;
         font-size: 13px;
@@ -192,15 +191,16 @@ const NavMenu = styled.div`
     }
     & .navbar-item {
       transition: all 0.3s;
-      margin-right: 48px;
+      line-height: 30px;
+      display: inline-block;
       padding: 10px;
       border-radius: 0px;
       color: ${colors.black};
       @media screen and (max-width: 1120px) {
-        margin-right: 30px;
+        margin-right: 15px;
       }
       @media screen and (max-width: 900px) {
-        margin-right: 15px;
+        margin-right: 5px;
       }
     }
     & .navbar-item.active {

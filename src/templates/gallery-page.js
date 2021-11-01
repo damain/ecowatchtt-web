@@ -7,7 +7,7 @@ import Slideshow from "../components/slideshow";
 import { AnimatePresence, motion } from "framer-motion";
 import styled from "styled-components";
 
-function GalleryPage({ data }) {
+function GalleryPage({ path, data }) {
   const [Modal, openModal, toggleModal] = useModal();
   const { edges: gallery } = data.allMarkdownRemark;
   const [selectedImage, setSelectedImage] = useState(0);
@@ -79,14 +79,24 @@ export default () => (
         }
       }
     `}
-    render={(data, count) => <GalleryPage data={data} count={count} />}
+    render={(data, count) => <GalleryPage path="/blog/" data={data} count={count} />}
   />
 );
 
 const Wrapper = styled(motion.div)`
   display: grid;
-  grid-template-columns: repeat(auto-fill, 200px);
-  gap: 10px;
+  grid-template-columns: repeat(auto-fill, 24%);
+  gap: 1%;
   width: 80%;
   margin: auto;
-`;
+  @media screen and (max-width: 1200px){
+    gap: 2%;
+    grid-template-columns: repeat(auto-fill, 32%);
+  }
+  @media screen and (max-width: 800px){
+    grid-template-columns: repeat(auto-fill, 48%);
+  }
+  @media screen and (max-width: 600px){
+    grid-template-columns: repeat(auto-fill, 100%);
+  }
+  `;

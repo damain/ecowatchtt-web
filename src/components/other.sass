@@ -24,6 +24,7 @@ body
 
 a
     text-decoration: none
+    overflow-wrap: break-word
 .cta-button
     background-color: $accent
     color: $white-ter !important
@@ -36,8 +37,8 @@ a
     transition: all .3s
     max-width: 80%
     margin: auto
-@media screen and (max-width: 1120px)
-    max-width: 90%
+    @media screen and (max-width: 1120px)
+        max-width: 90%
 
 .content .taglist
     list-style: none
@@ -139,6 +140,13 @@ li
     padding-top: 30px
 
 // blog roll
+
+h1.title
+    line-height: 40px
+    max-width: 800px
+
+.blog-content, h1.title
+    max-width: 800px
 .blog-list-item
     display: grid
     grid-template-columns: 1fr 2fr
@@ -155,7 +163,8 @@ li
         margin-top: 5px
         color: $black
     h3
-        margin-bottom: 0
+        margin-bottom: 10px
+        line-height: 30px
     a
         color: $accent
 p
@@ -169,10 +178,10 @@ p
     margin-top: 50px
 
 .button
-    border: 2px solid $accent
+    border: 3px solid $accent
     padding: 10px
     border-radius: 4px
-    color: $black
+    color: $accent
     font-weight: 600
     &:hover
         background-color: $accent
@@ -219,8 +228,8 @@ footer
     
 
 .container
-    display: grid
-    grid-template-columns: 1fr
+    // display: grid
+    // grid-template-columns: 1fr
    
     .footer-left
         margin-bottom: 20px
@@ -322,3 +331,20 @@ form
     white-space: break-spaces
     font-size: 1.1em
     line-height: 1.3em
+
+.navbar-start > a.navbar-item.cta-button
+    border-radius: 3px
+    
+.footer-left .navbar-item
+    line-height: 40px 
+    display: inline-block
+    @media screen and (max-width: 800px) 
+        display: block
+    
+.article
+    width: 800px
+    max-width: 100%
+    margin: auto
+
+    @media screen and (max-width: 1000px) 
+        width: 90%

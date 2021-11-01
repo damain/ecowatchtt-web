@@ -10,7 +10,7 @@ const TemplateWrapper = ({ path, children }) => {
 
   useEffect(()=>{
     let handleResize = ()=>{
-      const scrollbarWidth = window.innerWidth - document.body.clientWidth
+      const scrollbarWidth = window.innerWidth - document.body.clientWidth+1
       document.body.style.setProperty("--scrollbarWidth", `${scrollbarWidth}px`)
     }
     handleResize()

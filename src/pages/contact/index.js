@@ -35,11 +35,58 @@ export default class Index extends React.Component {
 
   render() {
     return (
-      <Layout>
+      <Layout path="/contact/">
         <section className="section">
           <div className="container">
             <div className="content">
               <h1>Contact</h1>
+              <div className="cta">Want to get involved! Contact us by phone or email.</div>
+          <div className="column is-4">
+            <section>
+              <ul className="menu-list">
+                <li>
+                  <a className="contact-item" href="tel:18683566290">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="phone-icon icon"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+                      />
+                    </svg>
+                    <span className="text">1 868 356 6290</span>
+                  </a>
+                </li>
+                <li>
+                  <a className="contact-item" href="mailto:ecowatchtt@gmail.com">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="icon"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                      />
+                    </svg>
+                    <span className="text">ecowatchtt@gmail.com</span>
+                  </a>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <div className="cta">Or you can send us a message using the form below</div>
+
               <form
                 name="contact"
                 method="post"
@@ -102,7 +149,7 @@ export default class Index extends React.Component {
                 </div>
                 <div className="field">
                   <button className="button is-link" type="submit">
-                    Send
+                    Send Message
                   </button>
                 </div>
               </form>

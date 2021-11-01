@@ -18,9 +18,9 @@ function Menu({path}) {
         <Link className={`navbar-item ${path=== "/contact/" ? "active" : ""}`} to="/contact">
           CONTACT
         </Link>
-        {/* <Link className={`navbar-item cta-button`} to="/contact/examples">
+        <Link target="_blank" className={`navbar-item cta-button`} to="https://www.change.org/p/commissioner-of-state-lands-of-the-ministry-of-agriculture-land-and-fisheries-cosl-placeholder">
           SIGN THE PETITION
-        </Link> */}
+        </Link>
       </div>
     </>
   );
