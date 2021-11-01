@@ -19,7 +19,7 @@ const animation = {
 export default function BlogIndexPage() {
   const [activeItem, setActiveItem] = useState("articles");
   return (
-    <Layout>
+    <Layout path="/blog/">
       <div
         className="full-width-image-container margin-top-0"
         style={{

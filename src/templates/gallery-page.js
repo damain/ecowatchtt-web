@@ -7,7 +7,7 @@ import Slideshow from "../components/slideshow";
 import { AnimatePresence, motion } from "framer-motion";
 import styled from "styled-components";
 
-function GalleryPage({ data }) {
+function GalleryPage({ path, data }) {
   const [Modal, openModal, toggleModal] = useModal();
   const { edges: gallery } = data.allMarkdownRemark;
   const [selectedImage, setSelectedImage] = useState(0);
@@ -79,7 +79,7 @@ export default () => (
         }
       }
     `}
-    render={(data, count) => <GalleryPage data={data} count={count} />}
+    render={(data, count) => <GalleryPage path="/blog/" data={data} count={count} />}
   />
 );
 
