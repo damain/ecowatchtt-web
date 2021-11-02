@@ -28,11 +28,11 @@ function GalleryPage({ path, data }) {
       <h3 style={{textAlign: "center"}}>Photos of environmental issues arround the world</h3>
       <Wrapper>
         {gallery[0]?.node?.frontmatter.images.map((galleryItem, index) => (
-          <div key={galleryItem?.image?.publicURL}>
-            <div onClick={() => handleImageClicked(index)}>
+          <ImageWrapper key={galleryItem?.image?.publicURL}>
+            <div class="imageContainer" onClick={() => handleImageClicked(index)}>
               <GatsbyImage fluid={galleryItem?.image?.childImageSharp.fluid} />
             </div>
-          </div>
+          </ImageWrapper>
         ))}
       </Wrapper>
       <AnimatePresence>
@@ -85,18 +85,23 @@ export default () => (
 
 const Wrapper = styled(motion.div)`
   display: grid;
-  grid-template-columns: repeat(auto-fill, 24%);
-  gap: 1%;
+  grid-template-columns: repeat(auto-fill, calc(25% - 30px));
+  gap: 10px;
   width: 80%;
   margin: auto;
   @media screen and (max-width: 1200px){
-    gap: 2%;
-    grid-template-columns: repeat(auto-fill, 32%);
+    grid-template-columns: repeat(auto-fill, calc(33.3% - 20px));
   }
   @media screen and (max-width: 800px){
-    grid-template-columns: repeat(auto-fill, 48%);
+    grid-template-columns: repeat(auto-fill, calc(50% - 10px));
   }
-  @media screen and (max-width: 600px){
+  /* @media screen and (max-width: 600px){
     grid-template-columns: repeat(auto-fill, 100%);
-  }
+  } */
   `;
+
+const ImageWrapper = styled.div`
+  max-height: 150px;
+  overflow-y: hidden;
+
+`;
